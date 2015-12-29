@@ -242,6 +242,7 @@
 				<onright>212</onright>
 				<control type="button" id="345">
 					<description>Shutdown</description>
+					<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 					<include>MenuBarIconBtn</include>
 					<texturefocus>gui/menu-bar-power-focus.png</texturefocus>
 					<texturenofocus>gui/menu-bar-power-nofocus.png</texturenofocus>
@@ -249,6 +250,7 @@
 				</control>
 				<control type="button" id="346">
 					<description>Favourites</description>
+					<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 					<include>MenuBarIconBtn</include>
 					<texturefocus>gui/menu-bar-favourites-focus.png</texturefocus>
 					<texturenofocus>gui/menu-bar-favourites-nofocus.png</texturenofocus>
@@ -1144,6 +1146,7 @@
 				<control type="button" id="345">
 					<description>Shutdown</description>
 					<include>MenuBarIconBtn</include>
+					<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 					<texturefocus>gui/menu-bar-power-focus.png</texturefocus>
 					<texturenofocus>gui/menu-bar-power-nofocus.png</texturenofocus>
 					<onclick>ActivateWindow(ShutdownMenu)</onclick>
@@ -1151,6 +1154,7 @@
 				<control type="button" id="346">
 					<description>Favourites</description>
 					<include>MenuBarIconBtn</include>
+					<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 					<texturefocus>gui/menu-bar-favourites-focus.png</texturefocus>
 					<texturenofocus>gui/menu-bar-favourites-nofocus.png</texturenofocus>
 					<onclick>ActivateWindow(Favourites)</onclick>
